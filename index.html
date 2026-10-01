@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>The Ultimate Golf Tour 2027</title>
-<meta name="description" content="Celtic Manor, The Belfry and nine nights Super All Inclusive at Lykia World, Belek. 6–21 August 2027. Register your interest with Golf Travel Centre.">
+<meta name="description" content="Celtic Manor, The Belfry and nine nights Super All Inclusive at Lykia World, Belek. 6–21 August 2027. Golf Travel Centre.">
 <meta property="og:title" content="The Ultimate Golf Tour 2027 | Golf Travel Centre">
-<meta property="og:description" content="Celtic Manor · The Belfry · Belek, Turkey. 6–21 August 2027. Register your interest.">
+<meta property="og:description" content="Celtic Manor · The Belfry · Belek, Turkey. 6–21 August 2027.">
 <meta property="og:type" content="website">
 <style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 
@@ -339,13 +339,11 @@ footer .terms{max-width:90ch;display:grid;gap:8px}
       <li><a href="#prices">Prices</a></li>
       <li><a href="#register">Register</a></li>
     </ul>
-    <a class="btn btn-primary desk" href="#register">Register your interest</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button>
   </div>
 </header>
 <nav class="mobile-menu" id="mmenu" aria-label="Mobile">
   <a href="#tour">The tour</a><a href="#celtic-manor">Celtic Manor</a><a href="#the-belfry">The Belfry</a><a href="#turkey">Turkey</a><a href="#itinerary">Itinerary</a><a href="#prices">Prices</a>
-  <a class="btn btn-primary" href="#register">Register your interest</a>
 </nav>
 
 <section class="hero" aria-label="Introduction">
@@ -548,10 +546,6 @@ footer .terms{max-width:90ch;display:grid;gap:8px}
       <div class="addon">The Belfry dinners · 3 nights<span>$150 pp</span></div>
       <div class="addon">Derby Course round<span>On request</span></div>
     </div>
-    <div class="price-cta rv">
-      <a class="btn btn-on-dark" href="#register">Register your interest</a>
-      <span style="color:#DCEEFE">No payment needed to register</span>
-    </div>
     <p class="fine">Prices are based on twin/double room occupancy and a group of 36 golfers + 36 non-golfers. Flights aren't included and are arranged separately. This is a register-your-interest campaign: final availability, pricing and arrangements are subject to confirmation.</p>
   </div>
 </section>
@@ -582,7 +576,7 @@ footer .terms{max-width:90ch;display:grid;gap:8px}
   <div class="wrap reg-grid">
     <div class="reg-side rv">
       <h2>Want to join us?</h2>
-      <p class="lede">Register your interest today and we'll contact you with the full tour details, availability and next steps.</p>
+      <p class="lede">Leave your details today and we'll contact you with the full tour details, availability and next steps.</p>
       <ol>
         <li><span><b>Register below.</b> It takes a minute and there's no payment.</span></li>
         <li><span><b>We get in touch</b> with the full tour details and availability.</span></li>
@@ -623,7 +617,6 @@ footer .terms{max-width:90ch;display:grid;gap:8px}
   </div>
 </footer>
 
-<div class="mcta" id="mcta"><a class="btn btn-primary" href="#register">Register your interest</a></div>
 
 <script>
 
@@ -737,9 +730,6 @@ footer .terms{max-width:90ch;display:grid;gap:8px}
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('pre');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.rv').forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('pre');io.observe(el);}});
   }
-  var mcta=document.getElementById('mcta'),hero=document.querySelector('.hero'),reg=document.getElementById('register');
-  function onScroll(){var h=hero.getBoundingClientRect().bottom<0,r=reg.getBoundingClientRect();mcta.classList.toggle('show',h&&!(r.top<innerHeight*.8&&r.bottom>0));}
-  addEventListener('scroll',onScroll,{passive:true});onScroll();
 /* ---------- Form ---------- */
   // To collect registrations on a public deployment (e.g. Vercel), set this to your Google Apps Script web-app URL.
   var FORM_ENDPOINT='';
